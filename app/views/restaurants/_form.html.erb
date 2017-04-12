@@ -1,0 +1,9 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, input_html: { placeholder: "MacDonald" } %>
+  <%= f.input :address %>
+  <%= f.input :category, as: :select, collection: [ "chinese", "italian", "french", "belgian", "japanese"], include_blank:  "Select a category" %>
+  <%= f.input :phone_number, as: :string %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+
+

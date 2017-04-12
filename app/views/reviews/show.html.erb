@@ -15,18 +15,6 @@
       <%= link_to "Back", restaurants_path %>
       <%= link_to "Edit", edit_restaurant_path(@restaurant) %>
       <%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" } %>
-
-      <% @restaurant.reviews.each do |review| %>
-
-      <% end %>
-
-      <h2>   on <%= @restaurant.reviews.count %> Reviews</h2>
-
-      <% @restaurant.reviews.each do |review| %>
-            <p>Rating: <%= review.rating %> on 5</p>
-            <p><%= review.content %></p>
-        <% end %>
-
     </div>
   </div>
 </div>
